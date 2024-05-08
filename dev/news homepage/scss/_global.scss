@@ -15,3 +15,19 @@
     --f-xs: u.rem(18);
     --f-body: u.rem(15);
 }
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
