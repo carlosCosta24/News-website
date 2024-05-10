@@ -1,0 +1,29 @@
+@use '../utility/' as u;
+
+.feature {
+    display: grid;
+    gap: u.rem(24);
+
+    &__img {}
+
+    &__head {
+        font-size: u.rem(40);
+        font-size: clamp(u.rem(40), 1.949823943661972rem + 2.3474178403755865vw, u.rem(56));
+        font-weight: 800;
+
+    }
+
+    &__p {}
+
+    &__btn {
+        display: inline-block;
+        background-color: var(--c-red);
+        color: var(--c-white);
+        font-size: u.rem(14);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: u.rem(12) u.rem(32);
+        letter-spacing: 0.31em;
+        justify-self: start;
+    }
+}
