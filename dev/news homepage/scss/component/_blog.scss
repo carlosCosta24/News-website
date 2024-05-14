@@ -4,6 +4,13 @@
     display: grid;
     gap: u.rem(30);
 
+    @media(width >=u.em(1110)) {
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
+        grid-column: 1/-1;
+        padding-block-start: u.rem(40);
+    }
+
     &__item {
         display: grid;
         grid-template-columns: u.rem(100) auto;
@@ -32,13 +39,16 @@
             font-weight: 800;
             line-height: 1.1;
             font-size: var(--f-xs);
+
+            &:hover {
+                color: var(--c-red);
+            }
         }
+
+
     }
 
     &__p {
         align-self: end;
     }
-
-
-
 }
