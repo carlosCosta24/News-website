@@ -5,6 +5,7 @@
         background: none;
         border: none;
         padding: 0;
+        cursor: pointer;
 
         @media (width >=u.em(1110)) {
 
@@ -36,6 +37,7 @@
         display: block;
         margin-inline-start: auto;
         margin-block-end: u.rem(86);
+        cursor: pointer;
 
 
     }
