@@ -10,6 +10,7 @@
         @media (width >=u.em(1110)) {
 
             display: none;
+
         }
     }
 
@@ -29,7 +30,8 @@
             background-color: var(--c-white);
             padding: u.rem(30);
             translate: 100vw 0;
-            transition: translate 500ms ease-in;
+            transition: display, translate 600ms ease-in;
+
         }
     }
 

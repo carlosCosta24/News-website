@@ -1,4 +1,5 @@
 import './scss/style.scss'
+const body = document.querySelector('body')
 const open = document.querySelector('.nav__btn__open')
 const close = document.querySelector('.nav__btn__close')
 const overlay = document.querySelector('.nav__overlay')
@@ -12,6 +13,7 @@ const openMenu = () => {
         overlay.style.display = 'block '
         overlay.style.opacity = '0.75'
         open.setAttribute('aria-expanded', true)
+        body.style.overflowY = 'hidden'
         status = false
 
     }
@@ -22,6 +24,8 @@ const closeMenu = () => {
         mobileMenu.style.display = 'none'
         overlay.style.display = 'none '
         overlay.style.opacity = '0'
+        body.style.overflowY = 'scroll'
+
         status = true
     }
 
@@ -31,11 +35,12 @@ const closeMenu = () => {
 
 const detect = (e) => {
     if (e.matches) {
-        console.log('this is a mobile ')
+        setTimeout(() => {
+            mobileMenu.style.display = 'block'
+
+        }, 500)
 
     } else {
-        console.log('this is a desktop ')
-
 
     }
 
