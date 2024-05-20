@@ -2,6 +2,7 @@
 
 .blog {
     display: grid;
+    margin-bottom: u.rem(50);
     gap: u.rem(30);
 
     @media(width >=u.em(1110)) {

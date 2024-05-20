@@ -20,12 +20,12 @@ const openMenu = () => {
 
 }
 const closeMenu = () => {
-    if (status == false) {
+    if (!status) {
         mobileMenu.style.display = 'none'
         overlay.style.display = 'none '
         overlay.style.opacity = '0'
+        open.setAttribute('aria-expanded', false)
         body.style.overflowY = 'scroll'
-
         status = true
     }
 
