@@ -33,9 +33,14 @@ const closeMenu = () => {
 const detect = (e) => {
     if (e.matches) {
         setTimeout(() => {
-            mobileMenu.style.display = 'block'
+            mobileMenu.classList.add('open')
+
 
         }, 500)
+
+    }
+    else {
+        mobileMenu.classList.remove('open')
 
     }
 }
