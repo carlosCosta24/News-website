@@ -5,28 +5,25 @@ const close = document.querySelector('.nav__btn__close')
 const overlay = document.querySelector('.nav__overlay')
 const mobileMenu = document.querySelector('.nav__cont')
 const size = window.matchMedia('(width <69.3em)')
-let status = open.getAttribute('aria-expanded')
+let status = open.getAttribute('aria-expanded') === 'true'
 
 const openMenu = () => {
-    if (status) {
-        mobileMenu.style.display = 'block'
-        overlay.style.display = 'block '
-        overlay.style.opacity = '0.75'
+    if (!status) {
+        mobileMenu.classList.add('open')
+        overlay.classList.add('open')
+        body.classList.add('noscroll')
         open.setAttribute('aria-expanded', true)
-        body.style.overflowY = 'hidden'
-        status = false
-
+        status = true
     }
 
 }
 const closeMenu = () => {
-    if (!status) {
-        mobileMenu.style.display = 'none'
-        overlay.style.display = 'none '
-        overlay.style.opacity = '0'
+    if (status) {
+        mobileMenu.classList.remove('open')
+        overlay.classList.remove('open')
+        body.classList.remove('noscroll')
         open.setAttribute('aria-expanded', false)
-        body.style.overflowY = 'scroll'
-        status = true
+        status = false
     }
 
 
@@ -40,13 +37,14 @@ const detect = (e) => {
 
         }, 500)
 
-    } else {
-
     }
-
 }
-open.addEventListener('click', openMenu)
-close.addEventListener('click', closeMenu)
-size.addEventListener('change', (e) => { detect(e) })
+document.addEventListener('DOMContentLoaded', () => {
+    open.addEventListener('click', openMenu)
+
+    size.addEventListener('change', (e) => { detect(e) })
+
+    close.addEventListener('click', closeMenu)
+})
 
 

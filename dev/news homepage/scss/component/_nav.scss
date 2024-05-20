@@ -32,6 +32,10 @@
             translate: 100vw 0;
             transition: display, translate 600ms ease-in;
 
+            &.open {
+                display: block;
+            }
+
         }
     }
 
@@ -51,6 +55,11 @@
         opacity: 0;
         transition: opacity 300ms ease-in;
         display: none;
+
+        &.open {
+            display: block;
+            opacity: 0.75;
+        }
 
     }
 

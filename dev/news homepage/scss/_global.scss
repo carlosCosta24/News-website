@@ -33,7 +33,12 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.7;
     font-size: u.rem(15);
-    color: var(--c-gray)
+    color: var(--c-gray);
+
+    &.noscroll {
+        overflow-y: hidden;
+
+    }
 }
 
 h1,
