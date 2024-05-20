@@ -51,5 +51,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     close.addEventListener('click', closeMenu)
 })
-
+detect(size)
 
