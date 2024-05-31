@@ -49,8 +49,7 @@ you will:
 
 - [vite docs](https://vitejs.dev/guide/) - This helped me geting started and folder structure. I really liked this pattern and will use it going forward.
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - This is an amazing DOCUMENTATION which helped me finally understand how to use this tage and optmize it to different use cases. I'd recommend it to anyone still learning this concept.
--[coder coder builds](
-[www.youtube.com/@codercoderbuilds](https://www.youtube.com/@TheCoderCoder))
+-[coder coder builds](https://www.youtube.com/@TheCoderCoder).
 
 ## Author
 
