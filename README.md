@@ -26,7 +26,7 @@ you will:
 
 ### Screenshot
 
-![screenshot.png](./screenshot.jpg)
+![screenshot.png](./screenshot.png)
 
 ### Links
 
